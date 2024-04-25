@@ -1,0 +1,21 @@
+{
+  "name": "docsbit-e2e-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:open:gui": "npx cypress open",
+    "test:all": "cypress run",
+    "test:mobileResponsive": "cypress run --spec 'cypress/e2e/mobileResponsiveTests/**/*'",
+    "test:homePage": "cypress run --spec 'cypress/e2e/homePage/**/*'",
+    "test:homePage:basic": "cypress run --spec 'cypress/e2e/homePage/basic/*'",
+    "test:homePage:navigation": "cypress run --spec 'cypress/e2e/homePage/navigation/*'",
+    "test:subPages:features": "cypress run --spec 'cypress/e2e/subPages/**/*'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.8.1"
+  }
+}
