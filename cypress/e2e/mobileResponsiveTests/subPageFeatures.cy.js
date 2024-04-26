@@ -20,10 +20,11 @@ describe('Responsiveness tests for the "Features" subpage on various mobile devi
                 cy.get(".invoice-brand-img > img").should("be.visible");
             });
 
-            it('It should display key page elements (header, navigation, footer)', () => {
-                cy.get("header").should("be.visible");
-                cy.get("nav").should("be.visible");
-                cy.get("footer").should("be.visible");
+            it('It should display key page elements of "Features" subpage (navBar, header. section1, footer)', () => {
+                cy.get(".navbar").should("be.visible");
+                cy.get('.page-header-ui').should("be.visible");
+                cy.get('main > .bg-light').should("be.visible");
+                cy.get(".footer").should("be.visible");
             });
 
             it('It should toggle the visibility of the navigation menu', () => {

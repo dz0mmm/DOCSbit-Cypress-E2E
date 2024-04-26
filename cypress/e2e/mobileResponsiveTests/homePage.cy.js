@@ -20,10 +20,13 @@ describe('Responsiveness tests of the "homePage" home page on various mobile dev
                 cy.get(".invoice-brand-img > img").should("be.visible");
             });
 
-            it('It should display key page elements (header, navigation, footer)', () => {
-                cy.get("header").should("be.visible");
-                cy.get("nav").should("be.visible");
-                cy.get("footer").should("be.visible");
+            it('It should display key page elements of homepage (navBar, header. section1, section2, section3, footer)', () => {
+                cy.get(".navbar").should("be.visible");
+                cy.get(".page-header-ui").should("be.visible");
+                cy.get(".pb-10").should("be.visible");
+                cy.get(".bg-light.py-10").should("be.visible");
+                cy.get(".bg-white.py-10").should("be.visible");
+                cy.get(".footer").should("be.visible");
             });
 
             it('It should toggle the visibility of the navigation menu', () => {

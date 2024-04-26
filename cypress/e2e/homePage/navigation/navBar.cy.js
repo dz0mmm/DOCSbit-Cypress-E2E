@@ -7,7 +7,7 @@ describe('Tests of functionality and visibility of the navigation menu', () => {
         cy.get(".navbar").should("be.visible");
     });
 
-    it('A navigation menu should be present on the page', () => {
+    it('The company logo should be visible', () => {
         cy.get(".invoice-brand-img > img").should("be.visible");
     });
 
@@ -26,7 +26,7 @@ describe('Tests of functionality and visibility of the navigation menu', () => {
         cy.url().should("include", "/knowledge");
     });
 
-    it('The "Home" button should redirect to the login page', () => {
+    it('The "Login" button should redirect to the login page', () => {
         cy.get(".navbar").contains("Login").click();
         cy.url().should("include", "/login");
     });

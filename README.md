@@ -99,10 +99,10 @@ List of test specifications. Once you navigate to E2E testing, you will see a li
 
 Test results. After selecting a test, you will be taken to the results screen where each test case is visualized and you can observe the progress and results of the tests.
 
-Runs all Cypress tests available in the project in headless mode:
+Runs all Cypress tests available in the project in headless mode on popular browsers:
 
 ```bash
-npm run test:all
+npm run test:all:browsers
 ```
 
    <p align="center">
@@ -129,10 +129,22 @@ Runs tests related to detailed navigation in the navigation bar or footer on the
 npm run test:homePage:navigation
 ```
 
+Runs all tests for the (subPages) section:
+
+```bash
+npm run test:subPages:all
+```
+
 Runs functionality tests for a subpage (features) in the (subPages) section:
 
 ```bash
 npm run test:subPages:features
+```
+
+Runs functionality tests for a subpage (kwowledgebase) in the (subPages) section:
+
+```bash
+npm run test:subPPages:knowledge
 ```
 
 ### Repository structure
@@ -141,6 +153,8 @@ The repository consists of the following folders and files:
 
 <p align="center">
   <img src="readme_media/project_folder_structure.png" alt="Project Directory Tree" title="Visual Representation of the Project's Folder Structure"/>
+   <br>
+  <em>Last photo update: April 25, 2024</em>
 </p>
 
 - `cypress` - Home directory for Cypress tests and related resources.
@@ -149,15 +163,22 @@ The repository consists of the following folders and files:
     - `homePage` - Tests for the application home page.
       - `basic` - Basic functionality tests of the home page.
         - `loadTests.cy.js` - Home page loading tests.
-        - `uiTest.cy.js` - Home page UI tests.
+        - `uiTest.cy.js` - Home page basic UI tests.
     - `navigation` - Tests related to navigating through various components of the homepage.
+      - `footer.cy.js` - Footer tests.
+      - `header.cy.js` - Header tests.
       - `navBar.cy.js` - Navigation bar tests.
+      - `section1.cy.js` - Section 1 tests.
+      - `section2.cy.js` - Section 2 tests.
+      - `section3.cy.js` - Section 3 tests.
     - `mobileResponsiveTests` - Application responsiveness tests on mobile devices.
       - `homePage.cy.js` - Homepage responsiveness tests for mobile devices
       - `subPageFeatures.cy.js` - Responsiveness tests of the features subpage for mobile devices.
     - `subPages` - Tests for subpages.
       - `featuresPage` - Tests for the features subpage.
         - `loadTests.cy.js` - Features subpage loading tests.
+      - `knowledgeBase` - Tests for the knowledgebase subpage.
+        - `loadTests.cy.js` - Knowledgebase subpage loading tests.
   - `fixtures` - Contains test data used in tests.
   - `screenshots` - A folder for storing screenshots taken during failed tests.
   - `support` - Contains support files that can be used globally for all tests.
