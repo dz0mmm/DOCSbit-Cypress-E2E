@@ -1,9 +1,9 @@
-describe('Tests of functionality and visibility of the section 2', () => {
+describe('Tests of functionality and visibility of the product features section', () => {
     beforeEach(() => {
         cy.visit("/");
     });
 
-    it('The section 2 element should be visible', () => {
+    it('The product features element should be visible', () => {
         cy.get(".bg-light.py-10").should("be.visible");
     });
 

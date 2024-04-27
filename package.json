@@ -4,14 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test:open:gui": "npx cypress open",
-    "test:all:browsers": "cypress run --browser chrome && cypress run --browser firefox",
+    "test:all:browsers": "cypress run --browser chrome && cypress run --browser firefox && cypress run --browser edge",
     "test:mobileResponsive": "cypress run --browser chrome --spec 'cypress/e2e/mobileResponsiveTests/**/*'",
-    "test:homePage": "cypress run --browser chrome --spec 'cypress/e2e/homePage/**/*'",
-    "test:homePage:basic": "cypress run --browser chrome --spec 'cypress/e2e/homePage/basic/*'",
-    "test:homePage:navigation": "cypress run --browser chrome --spec 'cypress/e2e/homePage/navigation/*'",
+    "test:homePage:all": "cypress run --browser chrome --spec 'cypress/e2e/homePage/**/*'",
     "test:subPages:all": "cypress run --browser chrome --spec 'cypress/e2e/subPages/**/*'",
     "test:subPages:features": "cypress run --browser chrome --spec 'cypress/e2e/subPages/featuresPage/*'",
-    "test:subPPages:knowledge": "cypress run --browser chrome --spec 'cypress/e2e/subPages/knowledgebasePage/*'"
+    "test:subPages:knowledge": "cypress run --browser chrome --spec 'cypress/e2e/subPages/knowledgebasePage/*'"
   },
   "keywords": [],
   "author": "",

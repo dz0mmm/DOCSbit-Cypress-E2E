@@ -77,24 +77,32 @@ npm run test:open:gui
 
 <p align="center">
   <img src="readme_media/gui_test_step_1.png" alt="Initial Cypress GUI Test Step" title="Step 1 in Cypress GUI Testing: Test Initialization"/>
+   <br>
+  <em>Last photo update: April 25, 2024</em>
 </p>
 
 Cypress welcome screen. After launching the Cypress UI, select the "E2E Testing" tab on the home screen.
 
 <p align="center">
   <img src="readme_media/gui_test_step_2.png" alt="Second Step in Cypress GUI Testing" title="Step 2 in Cypress GUI Testing: Selecting Tests"/>
+   <br>
+  <em>Last photo update: April 25, 2024</em>
 </p>
 
 Browser selection for E2E testing. On this screen you can select your preferred browser for testing. Select Chrome and click "Start E2E Testing in Chrome" to start testing in your chosen browser.
 
 <p align="center">
   <img src="readme_media/gui_test_step_3.png" aalt="Third Step in Cypress GUI Testing" title="Step 3 in Cypress GUI Testing: Test Configuration"/>
+   <br>
+  <em>Last photo update: April 25, 2024</em>
 </p>
 
 List of test specifications. Once you navigate to E2E testing, you will see a list of available test specifications. Select the sample test (file with the extension .cy.js) that you want to run.
 
 <p align="center">
   <img src="readme_media/gui_test_step_4.png" alt="Final Step in Cypress GUI Testing" title="Step 4 in Cypress GUI Testing: Test Execution"/>
+   <br>
+  <em>Last photo update: April 25, 2024</em>
 </p>
 
 Test results. After selecting a test, you will be taken to the results screen where each test case is visualized and you can observe the progress and results of the tests.
@@ -107,26 +115,22 @@ npm run test:all:browsers
 
    <p align="center">
   <img src="readme_media/run_all_tests.png" alt="Cypress Running Tests in Headless Mode" title="Cypress Executing All Tests in Headless Mode"/>
+   <br>
+  <em>Last photo update: April 25, 2024</em>
 </p>
 
 Above is a final summary of all run specifications (Run Finished), with a list of individual tests and their execution time.
 
+Runs all responsiveness tests for various mobile devices (mobileResponsiveTests)
+
+```bash
+npm run test:mobileResponsive
+```
+
 Runs all basic tests for the project's homepage (homePage):
 
 ```bash
-npm run test:homePage
-```
-
-Runs a specific set of tests from the basic folder for the project's homepage (homePage):
-
-```bash
-npm run test:homePage:basic
-```
-
-Runs tests related to detailed navigation in the navigation bar or footer on the project's homepage (homePage):
-
-```bash
-npm run test:homePage:navigation
+npm run test:homePage:all
 ```
 
 Runs all tests for the (subPages) section:
@@ -161,23 +165,21 @@ The repository consists of the following folders and files:
   - `downloads` - Folder to store files downloaded during testing.
   - `e2e` - Includes end-to-end (E2E) tests.
     - `homePage` - Tests for the application home page.
-      - `basic` - Basic functionality tests of the home page.
-        - `loadTests.cy.js` - Home page loading tests.
-        - `uiTest.cy.js` - Home page basic UI tests.
-    - `navigation` - Tests related to navigating through various components of the homepage.
+      - `loadTests.cy.js` - Home page loading tests.
+      - `uiTest.cy.js` - Home page basic UI tests.
       - `footer.cy.js` - Footer tests.
       - `header.cy.js` - Header tests.
-      - `navBar.cy.js` - Navigation bar tests.
-      - `section1.cy.js` - Section 1 tests.
-      - `section2.cy.js` - Section 2 tests.
-      - `section3.cy.js` - Section 3 tests.
+      - `navbar.cy.js` - Navigation bar tests.
+      - `SVGContainerSection.cy.js` - SVG container tests.
+      - `productFeaturesSection.cy.js` - product features tests.
+      - `MailToSection.cy.js` - MailTo tests.
     - `mobileResponsiveTests` - Application responsiveness tests on mobile devices.
       - `homePage.cy.js` - Homepage responsiveness tests for mobile devices
       - `subPageFeatures.cy.js` - Responsiveness tests of the features subpage for mobile devices.
     - `subPages` - Tests for subpages.
       - `featuresPage` - Tests for the features subpage.
         - `loadTests.cy.js` - Features subpage loading tests.
-      - `knowledgeBase` - Tests for the knowledgebase subpage.
+      - `knowledgebasePage` - Tests for the knowledgebase subpage.
         - `loadTests.cy.js` - Knowledgebase subpage loading tests.
   - `fixtures` - Contains test data used in tests.
   - `screenshots` - A folder for storing screenshots taken during failed tests.

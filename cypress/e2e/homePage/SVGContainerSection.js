@@ -1,9 +1,9 @@
-describe('Tests of functionality and visibility of the section 1', () => {
+describe('Tests of functionality and visibility of the SVG container section', () => {
     beforeEach(() => {
         cy.visit("/");
     });
 
-    it('The section 1 element should be visible', () => {
+    it('The SVG container element should be visible', () => {
         cy.get(".pb-10").should("be.visible");
     });
 

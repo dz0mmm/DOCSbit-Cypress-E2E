@@ -1,9 +1,9 @@
-describe('Tests of functionality and visibility of the section 3', () => {
+describe('Tests of functionality and visibility of the mail to section', () => {
     beforeEach(() => {
         cy.visit("/");
     });
 
-    it('The section 3 element should be visible', () => {
+    it('The mail to element should be visible', () => {
         cy.get(".bg-white.py-10").should("be.visible");
     });
 
