@@ -166,7 +166,7 @@ The repository consists of the following folders and files:
   - `e2e` - Includes end-to-end (E2E) tests.
     - `homePage` - Tests for the application home page.
       - `loadTests.cy.js` - Home page loading tests.
-      - `uiTest.cy.js` - Home page basic UI tests.
+      - `simpleUITests.cy.cy.js` - Home page basic UI tests.
       - `footer.cy.js` - Footer tests.
       - `header.cy.js` - Header tests.
       - `navbar.cy.js` - Navigation bar tests.
