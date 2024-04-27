@@ -171,7 +171,7 @@ The repository consists of the following folders and files:
       - `header.cy.js` - Header tests.
       - `navbar.cy.js` - Navigation bar tests.
       - `SVGContainerSection.cy.js` - SVG container tests.
-      - `productFeaturesSection.cy.js` - product features tests.
+      - `productFeaturesSection.cy.js` - Product features tests.
       - `MailToSection.cy.js` - MailTo tests.
     - `mobileResponsiveTests` - Application responsiveness tests on mobile devices.
       - `homePage.cy.js` - Homepage responsiveness tests for mobile devices
