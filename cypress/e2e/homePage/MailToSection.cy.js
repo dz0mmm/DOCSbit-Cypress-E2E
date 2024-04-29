@@ -14,6 +14,6 @@ describe('Tests of functionality and visibility of the mail to section', () => {
     it('Displays the contact titles with an email address and a "Mail us" button', () => {
         cy.get(".bg-white.py-10 > .container > .row > .mb-4 > .text-primary").should("be.visible").and("contain", "Have any questions?");
         cy.get(".lead").should("be.visible").and("contain", "hello@docsbit.com");
-        cy.get(".text-lg-end > .btn").should("be.visible").and("have.attr", "href").and("contain", "mailto:");
+        cy.get(".text-lg-end > .btn").should("be.visible").and("have.attr", "href").and("contain", "mailto:hello@docsbit.com");
     });
 });
