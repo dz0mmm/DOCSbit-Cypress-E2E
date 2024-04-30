@@ -20,7 +20,7 @@ describe('Responsiveness tests of the "homePage" home page on various mobile dev
                 cy.get(".invoice-brand-img > img").should("be.visible");
             });
 
-            it('It should display key page elements of homepage (navbar, header. section1, section2, section3, footer)', () => {
+            it('It should display key page elements of homepage (navbar, header, SVG container, product features, mailto, footer)', () => {
                 cy.get(".navbar").should("be.visible");
                 cy.get(".page-header-ui").should("be.visible");
                 cy.get(".pb-10").should("be.visible");

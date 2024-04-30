@@ -19,7 +19,7 @@ describe('Tests of UI elements on the DOCSbit home page', () => {
         cy.get(".pb-10").should("be.visible");
     });
 
-    it('A secion product features section should be visible on the page', () => {
+    it('A product features section should be visible on the page', () => {
         cy.get(".bg-light.py-10").should("be.visible");
     });
 
