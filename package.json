@@ -5,17 +5,19 @@
   "scripts": {
     "test:open:gui": "npx cypress open",
     "test:all:browsers": "cypress run --browser chrome && cypress run --browser firefox && cypress run --browser edge",
-    "test:mobileResponsive": "cypress run --browser chrome --spec 'cypress/e2e/mobileResponsiveTests/**/*'",
-    "test:homePage:all": "cypress run --browser chrome --spec 'cypress/e2e/homePage/**/*'",
-    "test:subPages:all": "cypress run --browser chrome --spec 'cypress/e2e/subPages/**/*'",
-    "test:subPages:features": "cypress run --browser chrome --spec 'cypress/e2e/subPages/featuresPage/*'",
-    "test:subPages:knowledge": "cypress run --browser chrome --spec 'cypress/e2e/subPages/knowledgebasePage/*'"
+    "test:mobileResponsive": "cypress run --browser chrome --spec 'cypress/e2e/MobileResponsiveTests/**/*'",
+    "test:homePage:all": "cypress run --browser chrome --spec 'cypress/e2e/HomePage/**/*'",
+    "test:subPages:all": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/**/*'",
+    "test:subPages:features": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/FeaturesPage/*'",
+    "test:subPages:knowledge": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/KnowledgebasePage/*'",
+    "test:subPages:privacy": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/PrivacyPolicyPage/*'",
+    "test:subPages:terms": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/TermsOfServicePage/*'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.8.1"
+    "cypress": "^13.9.0"
   }
 }

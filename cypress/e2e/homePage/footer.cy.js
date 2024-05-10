@@ -11,8 +11,7 @@ describe('Tests of functionality and visibility of the footer', () => {
         cy.get(".invoice-brand-img > img").should("be.visible");
     });
 
-
-    it('Display the footer with all elements and should', () => {
+    it('Display the footer with all elements', () => {
         cy.get(".footer-brand").should("be.visible").and("contain", "DOCSbit");
         cy.get(".footer > .container > :nth-child(1) > :nth-child(1) > .mb-3").should("be.visible").and("contain", "Documentations made easy");
         cy.get(".footer > .container > .align-items-center > :nth-child(1)").should("be.visible").and("contain", "Copyright © DOCSbit 2024");
