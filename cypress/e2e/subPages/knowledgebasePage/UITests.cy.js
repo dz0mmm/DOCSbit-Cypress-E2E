@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit home page', () => {
+describe('Tests of UI elements on the DOCSbit knowledgebase page', () => {
     beforeEach(() => {
         cy.visit("/knowledge");
     });
@@ -39,7 +39,7 @@ describe('Tests of UI elements on the DOCSbit home page', () => {
         cy.get(".post-preview-meta-details-date").should("be.visible").and("contain", "5 min read");
         cy.get(".post-preview-meta-img").should('be.visible').and('have.attr', 'src').should('include', 'profile-4.png');
     });
-    //
+
     it('Should have working link in the article card', () => {
         cy.get(".card").click();
         cy.url().should("include", "/knowledge/why-is-software-documentation-important");
