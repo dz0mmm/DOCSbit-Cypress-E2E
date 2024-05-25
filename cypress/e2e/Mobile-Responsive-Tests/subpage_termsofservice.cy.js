@@ -1,4 +1,4 @@
-describe('Responsiveness tests for the "Features" subpage on various mobile devices', () => {
+describe('Responsiveness tests for the "Terms of Service" subpage on various mobile devices', () => {
     const devices = [
         "ipad-mini",
         "iphone-6",
@@ -13,17 +13,16 @@ describe('Responsiveness tests for the "Features" subpage on various mobile devi
         context(`Responsiveness test on the device ${device}`, () => {
             beforeEach(() => {
                 cy.viewport(device);
-                cy.visit("/features");
+                cy.visit("/terms");
             });
 
             it('The company logo should be visible', () => {
                 cy.get(".invoice-brand-img > img").should("be.visible");
             });
 
-            it('It should display key page elements of "Features" subpage (navbar, header, product features, footer)', () => {
+            it('It should display key page elements of "Terms of Service" subpage (navbar, product features, footer)', () => {
                 cy.get(".navbar").should("be.visible");
-                cy.get('.page-header-ui').should("be.visible");
-                cy.get('main > .bg-light').should("be.visible");
+                cy.get(".bg-white > .container").should("be.visible");
                 cy.get(".footer").should("be.visible");
             });
 
