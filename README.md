@@ -158,43 +158,67 @@ The repository consists of the following folders and files:
 <p align="center">
   <img src="readme_media/project_folder_structure.png" alt="Project Directory Tree" title="Visual Representation of the Project's Folder Structure"/>
    <br>
-  <em>Last photo update: April 25, 2024</em>
+  <em>Last photo update: May 26, 2024</em>
 </p>
 
 - `cypress` - Home directory for Cypress tests and related resources.
   - `downloads` - Folder to store files downloaded during testing.
   - `e2e` - Includes end-to-end (E2E) tests.
-    - `homePage` - Tests for the application home page.
-      - `loadTests.cy.js` - Home page loading tests.
-      - `simpleUITests.cy.cy.js` - Home page basic UI tests.
-      - `footer.cy.js` - Footer tests.
-      - `header.cy.js` - Header tests.
-      - `navbar.cy.js` - Navigation bar tests.
-      - `SVGContainerSection.cy.js` - SVG container tests.
-      - `productFeaturesSection.cy.js` - Product features tests.
-      - `MailToSection.cy.js` - MailTo tests.
-    - `mobileResponsiveTests` - Application responsiveness tests on mobile devices.
-      - `homePage.cy.js` - Homepage responsiveness tests for mobile devices
-      - `subPageFeatures.cy.js` - Responsiveness tests of the features subpage for mobile devices.
-    - `subPages` - Tests for subpages.
-      - `featuresPage` - Tests for the features subpage.
-        - `loadTests.cy.js` - Features subpage loading tests.
-      - `knowledgebasePage` - Tests for the knowledgebase subpage.
-        - `loadTests.cy.js` - Knowledgebase subpage loading tests.
+    - `Home-Page` - Tests for the application home page.
+      - `footer.cy.js` - Tests for the footer section.
+      - `header.cy.js` - Tests for the header section.
+      - `load_tests.cy.js` - Tests for loading the home page.
+      - `mailto_section.cy.js` - Tests for email links and functionality.
+      - `navbar.cy.js` - Tests for the navigation bar.
+      - `productFeatures_section.cy.js` - Tests for the product features section.
+      - `simple_ui_tests.cy.js` - Basic UI tests for the home page.
+      - `svgcontainer_section.cy.js` - Tests for SVG elements on the page.
+    - `Mobile-Responsive-Tests` - Application responsiveness tests on mobile devices.
+      - `homepage.cy.js` - Homepage responsiveness tests for mobile devices
+      - `subpage_features.cy.js` - Responsiveness tests of the features subpage for mobile devices.
+      - `subpage_knowledgebase.cy.js` - Responsiveness tests of the knowledgebase subpage for mobile devices.
+      - `subpage_privacypolicy.cy.js` - Responsiveness tests of the privacy policy subpage for mobile devices.
+      - `subpage_termsofservice.cy.js` - Responsiveness tests of the terms of service subpage for mobile devices.
+    - `Sub-Pages` - Tests for subpages.
+      - `Features-Page` - Tests for the features subpage.
+        - `Features-Subpages`
+          - `Features-Subpages-CustomStyling`
+            - `load_tests.cy.js` - Tests for loading the custom styling subpage.
+            - `ui_tests.cy.js` - UI tests for custom styling subpage.
+          - `Features-Subpages-DatabaseAssets`
+            - `load_tests.cy.js` - Tests for loading the database assets subpage.
+            - `ui_tests.cy.js` - UI tests for database assets subpage.
+          - `Features-Subpages-HistoryOfChanges`
+            - `load_tests.cy.js` - Tests for loading the history of changes subpage.
+            - `ui_tests.cy.js` - UI tests for history of changes subpage.
+          - `Features-Subpages-MultipleEditors`
+            - `load_tests.cy.js` - Tests for loading the multiple editors subpage.
+            - `ui_tests.cy.js` - UI tests for multiple editors subpage.
+          - `Features-Subpages-Sharing`
+            - `load_tests.cy.js` - Tests for loading the sharing subpage.
+            - `ui_tests.cy.js` -UI tests for sharing subpage.
+          - `Features-Subpages-StructuredDocumentations`
+            - `load_tests.cy.js` - Tests for loading the structured documentations subpage.
+            - `ui_tests.cy.js` - UI tests for structured documentations subpage.
+        - `loadTests.cy.js` - Tests for loading the features subpage.
+        - `ui_tests.cy.js` - UI tests for features subpage.
+      - `Knowledgebase-Page` - Tests for the knowledgebase subpage.
+        - `loadTests.cy.js` - Tests for loading the knowledgebase subpage.
+        - `ui_tests.cy.js` - UI tests for knowledgebase subpage.
+      - `PrivacyPolicy-Page` - Tests for the privacy policy subpage.
+        - `loadTests.cy.js` - Tests for loading the privacy policy subpage.
+        - `ui_tests.cy.js` - UI tests for privacy policy subpage.
+      - `TermsOfService-Page` - Tests for the terms of service subpage.
+        - `loadTests.cy.js` - Tests for loading the terms of service subpage.
+        - `ui_tests.cy.js` - UI tests for custom terms of service subpage.
   - `fixtures` - Contains test data used in tests.
-  - `screenshots` - A folder for storing screenshots taken during failed tests.
   - `support` - Contains support files that can be used globally for all tests.
-- `readme_media` - Directory for images and graphical resources used in documentation (README.md).
-  - `gui_test_step_1.png` - An image showing the first step of GUI testing.
-  - `gui_test_step_2.png` - An image showing the second step of GUI testing.
-  - `gui_test_step_3.png` - An image showing the third step of GUI testing.
-  - `gui_test_step_4.png` - An image showing the fourth step of GUI testing.
-  - `project_folder_structure.png` - An image showing the project's directory tree.
-  - `run_all_tests.png` - An image showing all tests running in headless mode.
 - `node_modules` - Folder containing Node.js modules installed by npm.
+- `readme_media` - Directory for images and graphical resources used in documentation (README.md).
 - `.gitignore` - A Git configuration file that specifies the files and folders that the version control system ignores.
 - `cypress.config.js` - The main Cypress configuration file where test settings and configuration are defined.
 - `package.json` - A manifest file for Node.js specifying project metadata and dependencies.
+- `package-lock.json` - Automatically generated file to lock down the versions of installed packages, ensuring consistency across installations. It also helps to improve the installation process by enabling faster and more secure setups.
 - `README.md` - A project documentation file that should contain information about the project, installation instructions, usage instructions, and other useful information.
 
 The above structure provides an orderly way to organize tests and their dependencies.
