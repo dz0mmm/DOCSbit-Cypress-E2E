@@ -25,7 +25,7 @@ describe('Tests of UI elements on the DOCSbit knowledgebase page', () => {
             });
     });
 
-    it('A product knowledgebase section should be visible on the page', () => {
+    it('A knowledgebase section should be visible on the page', () => {
         cy.get(".bg-light.py-10").should("be.visible");
     });
 
