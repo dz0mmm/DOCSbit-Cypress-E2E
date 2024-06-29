@@ -180,28 +180,28 @@ The repository consists of the following folders and files:
       - `subpage_privacypolicy.cy.js` - Responsiveness tests of the privacy policy subpage for mobile devices.
       - `subpage_termsofservice.cy.js` - Responsiveness tests of the terms of service subpage for mobile devices.
     - `Sub-Pages` - Tests for subpages.
-      - `Features-Page` - Tests for the features subpage.
-        - `Features-Subpages`
-          - `Features-Subpages-CustomStyling`
-            - `load_tests.cy.js` - Tests for loading the custom styling subpage.
-            - `ui_tests.cy.js` - UI tests for custom styling subpage.
-          - `Features-Subpages-DatabaseAssets`
-            - `load_tests.cy.js` - Tests for loading the database assets subpage.
-            - `ui_tests.cy.js` - UI tests for database assets subpage.
-          - `Features-Subpages-HistoryOfChanges`
-            - `load_tests.cy.js` - Tests for loading the history of changes subpage.
-            - `ui_tests.cy.js` - UI tests for history of changes subpage.
-          - `Features-Subpages-MultipleEditors`
-            - `load_tests.cy.js` - Tests for loading the multiple editors subpage.
-            - `ui_tests.cy.js` - UI tests for multiple editors subpage.
-          - `Features-Subpages-Sharing`
-            - `load_tests.cy.js` - Tests for loading the sharing subpage.
-            - `ui_tests.cy.js` -UI tests for sharing subpage.
-          - `Features-Subpages-StructuredDocumentations`
-            - `load_tests.cy.js` - Tests for loading the structured documentations subpage.
-            - `ui_tests.cy.js` - UI tests for structured documentations subpage.
-        - `loadTests.cy.js` - Tests for loading the features subpage.
-        - `ui_tests.cy.js` - UI tests for features subpage.
+      - `Features-Page` - Tests for the features page and subpages.
+        - `Features-Page-Features`
+         - `loadTests.cy.js` - Tests for loading the features page.
+         - `ui_tests.cy.js` - UI tests for features page.
+        - `Features-Subpage-CustomStyling`
+         - `load_tests.cy.js` - Tests for loading the custom styling subpage.
+         - `ui_tests.cy.js` - UI tests for custom styling subpage.
+        - `Features-Subpage-DatabaseAssets`
+         - `load_tests.cy.js` - Tests for loading the database assets subpage.
+         - `ui_tests.cy.js` - UI tests for database assets subpage.
+        - `Features-Subpage-HistoryOfChanges`
+         - `load_tests.cy.js` - Tests for loading the history of changes subpage.
+         - `ui_tests.cy.js` - UI tests for history of changes subpage.
+        - `Features-Subpage-MultipleEditors`
+         - `load_tests.cy.js` - Tests for loading the multiple editors subpage.
+         - `ui_tests.cy.js` - UI tests for multiple editors subpage.
+        - `Features-Subpage-Sharing`
+         - `load_tests.cy.js` - Tests for loading the sharing subpage.
+         - `ui_tests.cy.js` -UI tests for sharing subpage.
+        - `Features-Subpage-StructuredDocumentations`
+         - `load_tests.cy.js` - Tests for loading the structured documentations subpage.
+         - `ui_tests.cy.js` - UI tests for structured documentations subpage.
       - `Knowledgebase-Page` - Tests for the knowledgebase subpage.
         - `loadTests.cy.js` - Tests for loading the knowledgebase subpage.
         - `ui_tests.cy.js` - UI tests for knowledgebase subpage.
