@@ -1,4 +1,4 @@
-describe('Loading tests of the "Features Database Assets" subpage in the DOCSbit system', () => {
+describe('Loading tests of the "Database Assets" subpage in the DOCSbit system', () => {
     beforeEach(() => {
         cy.visit("/feature/database");
     });

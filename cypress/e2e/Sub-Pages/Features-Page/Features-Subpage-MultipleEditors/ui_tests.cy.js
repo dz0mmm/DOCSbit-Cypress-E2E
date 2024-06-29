@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit multiple editors page', () => {
+describe('Tests of UI elements on the DOCSbit "ultiple Editors" subpage', () => {
     beforeEach(() => {
         cy.visit("/feature/editors");
     });

@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit history of changes page', () => {
+describe('Tests of UI elements on the DOCSbit "History of Changes" subpage', () => {
     beforeEach(() => {
         cy.visit("/feature/history-of-changes");
     });

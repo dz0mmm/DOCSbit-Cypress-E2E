@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit terms of service page', () => {
+describe('Tests of UI elements on the DOCSbit "Terms of Service"subpage', () => {
     beforeEach(() => {
         cy.visit("/terms");
     });

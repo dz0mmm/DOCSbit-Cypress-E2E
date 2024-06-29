@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit database assets page', () => {
+describe('Tests of UI elements on the DOCSbit "Database Assets" page', () => {
     beforeEach(() => {
         cy.visit("/feature/database");
     });

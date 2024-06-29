@@ -1,4 +1,4 @@
-describe('Loading tests of the "Features Structured Documentations" subpage in the DOCSbit system', () => {
+describe('Loading tests of the "Structured Documentations" subpage in the DOCSbit system', () => {
     beforeEach(() => {
         cy.visit("/feature/structured-documentation");
     });

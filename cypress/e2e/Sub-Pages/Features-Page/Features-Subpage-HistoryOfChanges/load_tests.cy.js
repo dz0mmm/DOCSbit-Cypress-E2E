@@ -1,4 +1,4 @@
-describe('Loading tests of the "Features History of Changes" subpage in the DOCSbit system', () => {
+describe('Loading tests of the "History of Changes" subpage in the DOCSbit system', () => {
     beforeEach(() => {
         cy.visit("/feature/history-of-changes");
     });

@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit sharing page', () => {
+describe('Tests of UI elements on the DOCSbit "Sharing" subpage', () => {
     beforeEach(() => {
         cy.visit("/feature/sharing");
     });

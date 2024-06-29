@@ -1,4 +1,4 @@
-describe('Loading tests of the "Features Sharing" subpage in the DOCSbit system', () => {
+describe('Loading tests of the "Sharing" subpage in the DOCSbit system', () => {
     beforeEach(() => {
         cy.visit("/feature/sharing");
     });

@@ -1,4 +1,4 @@
-describe('Loading tests of the "Features Custom Stylings" subpage in the DOCSbit system', () => {
+describe('Loading tests of the "Custom Styling" subpage in the DOCSbit system', () => {
     beforeEach(() => {
         cy.visit("/feature/styling");
     });

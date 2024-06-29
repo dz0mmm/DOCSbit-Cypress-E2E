@@ -5,13 +5,13 @@
   "scripts": {
     "test:open:gui": "npx cypress open",
     "test:all:browsers": "cypress run --browser chrome && cypress run --browser firefox && cypress run --browser edge",
-    "test:mobileResponsive": "cypress run --browser chrome --spec 'cypress/e2e/MobileResponsiveTests/**/*'",
-    "test:homePage:all": "cypress run --browser chrome --spec 'cypress/e2e/HomePage/**/*'",
-    "test:subPages:all": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/**/*'",
-    "test:subPages:features": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/FeaturesPage/*'",
-    "test:subPages:knowledge": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/KnowledgebasePage/*'",
-    "test:subPages:privacy": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/PrivacyPolicyPage/*'",
-    "test:subPages:terms": "cypress run --browser chrome --spec 'cypress/e2e/SubPages/TermsOfServicePage/*'"
+    "test:mobileResponsive": "cypress run --browser chrome --spec 'cypress/e2e/Mobile-Responsive-Tests/**/*'",
+    "test:homePage:all": "cypress run --browser chrome --spec 'cypress/e2e/Home-Page/**/*'",
+    "test:subPages:all": "cypress run --browser chrome --spec 'cypress/e2e/Sub-Pages/**/*'",
+    "test:subPages:features": "cypress run --browser chrome --spec 'cypress/e2e/Sub-Pages/Features-Page/*'",
+    "test:subPages:knowledge": "cypress run --browser chrome --spec 'cypress/e2e/Sub-Pages/Knowledgebase-Page/*'",
+    "test:subPages:privacy": "cypress run --browser chrome --spec 'cypress/e2e/Sub-Pages/PrivacyPolicy-Page/*'",
+    "test:subPages:terms": "cypress run --browser chrome --spec 'cypress/e2e/Sub-Pages/TermsOfService-Page/*'"
   },
   "keywords": [],
   "author": "",

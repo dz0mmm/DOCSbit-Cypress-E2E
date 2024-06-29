@@ -1,4 +1,4 @@
-describe('Tests of UI elements on the DOCSbit privacy policy page', () => {
+describe('Tests of UI elements on the DOCSbit "Privacy Policy" subpage', () => {
     beforeEach(() => {
         cy.visit("/policy");
     });

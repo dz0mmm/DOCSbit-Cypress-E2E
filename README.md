@@ -175,6 +175,12 @@ The repository consists of the following folders and files:
       - `svgcontainer_section.cy.js` - Tests for SVG elements on the page.
     - `Mobile-Responsive-Tests` - Application responsiveness tests on mobile devices.
       - `homepage.cy.js` - Homepage responsiveness tests for mobile devices
+      - `subpage_features_customstyling.cy.js` - Responsiveness tests of the custom styling subpage for mobile devices.
+      - `subpage_features_databaseassets.cy.js` - Responsiveness tests of the database assets subpage for mobile devices.
+      - `subpage_features_historyofchanges.cy.js` - Responsiveness tests of the history of changes subpage for mobile devices.
+      - `subpage_features_multiple_editors.cy.js` - Responsiveness tests of the multiple editors subpage for mobile devices.
+      - `subpage_features_sharing.cy.js` - Responsiveness tests of the sharing subpage for mobile devices.
+      - `subpage_features_structureddocumentations.cy.js` - Responsiveness tests of the structured documentations subpage for mobile devices.
       - `subpage_features.cy.js` - Responsiveness tests of the features subpage for mobile devices.
       - `subpage_knowledgebase.cy.js` - Responsiveness tests of the knowledgebase subpage for mobile devices.
       - `subpage_privacypolicy.cy.js` - Responsiveness tests of the privacy policy subpage for mobile devices.

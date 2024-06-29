@@ -1,4 +1,4 @@
-describe('Loading tests of the "Features Multiple Editors" subpage in the DOCSbit system', () => {
+describe('Loading tests of the "Multiple Editors" subpage in the DOCSbit system', () => {
     beforeEach(() => {
         cy.visit("/feature/editors");
     });
