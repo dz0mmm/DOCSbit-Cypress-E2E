@@ -40,7 +40,7 @@ You should see the version of Git installed, confirming that it is ready to use.
 1. **Cloning the Repository**: Clone the repository using the command:
 
    ```bash
-   git clone https://github.com/dz0mmm/test-2.git
+   git clone https://github.com/dz0mmm/DOCSbit-Cypress-E2E.git
    ```
 
 2. **Installing dependencies**: Go to the repository directory and execute the command:

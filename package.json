@@ -18,6 +18,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.12.0"
+    "cypress": "^13.13.2"
   }
 }
