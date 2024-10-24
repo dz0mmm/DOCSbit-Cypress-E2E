@@ -23,6 +23,6 @@ describe('Tests of functionality and visibility of the header', () => {
 
     it('The "View example docs" button should redirect to the example documents page', () => {
         cy.get(".page-header-ui-content a").contains("View example docs").invoke("removeAttr", "target").click();
-        cy.url().should("include", "/shared/2feacaa5-14a0-4505-b7a4-dc9c5003130c");
+        cy.url().should("include", "/example_docsbit_documentation");
     });
 });
